@@ -1,0 +1,24 @@
+{
+  "name": "dodd_lopez_agencyx",
+  "version": "1.0.0",
+  "description": "One Page Portfolio Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanJamesDodd/Dodd_Lopez_AgencyX.git"
+  },
+  "author": "Ethan Dodd, Christine Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EthanJamesDodd/Dodd_Lopez_AgencyX/issues"
+  },
+  "homepage": "https://github.com/EthanJamesDodd/Dodd_Lopez_AgencyX#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "scrollreveal": "^4.0.4"
+  }
+}
