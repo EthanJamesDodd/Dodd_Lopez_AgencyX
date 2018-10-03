@@ -1,0 +1,13 @@
+body{
+    background-color: #8ce3b7;
+}
+
+.mainHeader{
+    color: white;
+}
+
+.mainHeader:hover{
+    color: #fcdf41;
+}
+
+/*# sourceMappingURL=main.css.map */
