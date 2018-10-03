@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/EthanJamesDodd/Dodd_Lopez_AgencyX#readme",
   "devDependencies": {
+    "aos": "^2.3.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "scrollreveal": "^4.0.4"
+  },
+  "dependencies": {
+    "require.js": "^1.0.0"
   }
 }
