@@ -1,15 +1,9 @@
 @import '_vars';
-// Fonts
-@font-face{
-    font-family: Bahnschrift;
-    src: url('../css/fonts/bahnschrift.ttf');
-}
 
 // Body Tags
 body{
     margin: 0;
     padding: 0;
-    font-family: Bahnschrift;
 }
 // Main Navigation
 
@@ -44,8 +38,7 @@ nav{
             text-decoration: none;
             color: white;
             border-bottom: 1px solid white;
-            font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-            font-weight: 350;
+            font-family: $main-font;
         }
     }
 }
@@ -59,14 +52,14 @@ nav{
 
 header{
     @include wormBackGround;
-    background-color: #cccccc;
+    background-color: $primary-grey;
 }
 
 // End Header Section
 
 // Our Team Section
 .ourTeam{
-    background-color: #8ce3b7;
+    background-color: $primary-green;
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -80,13 +73,13 @@ header{
 
     h1{
         @include mainHeader;
-        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-        font-weight: 350;
+        font-family: $main-font;
         padding: 35px 0 35px 0;
         width: 100%;
     }
 
     h2, h3{
+        font-family: $main-font;
         font-weight: 400;
         font-size: 16px;
     }
@@ -95,6 +88,7 @@ header{
         width: 100px;
         margin: 0 auto;
         padding: 40px 0 125px 0;
+        font-family: $secondary-font;
     }
 
 }
@@ -123,21 +117,20 @@ header{
 // Our Work Section
 
 #ourWork{
-    background-color: #cccccc;
+    background-color: $primary-grey;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     h1{
         @include mainHeader;
-        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-        font-weight: 350;
+        font-family: $main-font;
         width: 100%;
     }
 
     h2{
         font-size: 18px;
-        font-family: Bahnschrift;
+        font-family: $main-font;
         color: white;
         line-height: 3.333;
         margin: 0 25px 0 0;
@@ -148,6 +141,7 @@ header{
     p{
         color: white;
         font-size: 14px;
+        font-family: $secondary-font;
         font-weight: 400;
         line-height: 1.2; 
         letter-spacing: .3px;
@@ -170,7 +164,7 @@ header{
 
 // Contact Sections
 #contact{
-    background-color: #8ce3b7;
+    background-color: $primary-green;
     @include wormBackGround;
     display: flex;
     flex-direction: column;
@@ -179,6 +173,7 @@ header{
 
     h1{
         font-size: 24px;
+        font-family: $main-font;
         color: rgb(255, 255, 255);
         line-height: 1;
         text-align: center;
@@ -193,8 +188,7 @@ header{
     label{
         display: block;
         font-size: 14px;
-        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-        font-weight: 350;
+        font-family: $main-font;
         color: white;
         float: right;
         margin-right: 10px;
@@ -222,7 +216,7 @@ header{
 footer{
     display: flex;
     flex-direction: column;
-    background-color: #8ce3b7;
+    background-color: $primary-green;
     ul{
         align-self: flex-end;
         li{
@@ -233,8 +227,7 @@ footer{
             a{
                 text-decoration: none;
                 color: white;
-                font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-                font-weight: 350;
+                font-family: $main-font;
             }
         }
     }

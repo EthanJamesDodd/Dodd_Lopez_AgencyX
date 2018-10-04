@@ -1,10 +1,7 @@
-@font-face {
-  font-family: Bahnschrift;
-  src: url("../css/fonts/bahnschrift.ttf"); }
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans");
 body {
   margin: 0;
-  padding: 0;
-  font-family: Bahnschrift; }
+  padding: 0; }
 
 nav {
   padding-bottom: 135px; }
@@ -34,8 +31,7 @@ nav {
       text-decoration: none;
       color: white;
       border-bottom: 1px solid white;
-      font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-      font-weight: 350; }
+      font-family: "Open Sans", sans-serif; }
 
 .active {
   display: block; }
@@ -62,17 +58,18 @@ header {
     line-height: 1.765;
     text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
     text-align: center;
-    font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-    font-weight: 350;
+    font-family: "Open Sans", sans-serif;
     padding: 35px 0 35px 0;
     width: 100%; }
   .ourTeam h2, .ourTeam h3 {
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px; }
   .ourTeam p {
     width: 100px;
     margin: 0 auto;
-    padding: 40px 0 125px 0; }
+    padding: 40px 0 125px 0;
+    font-family: "Lato", sans-serif; }
 
 .teamFace {
   height: 75px;
@@ -102,12 +99,11 @@ header {
     line-height: 1.765;
     text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
     text-align: center;
-    font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-    font-weight: 350;
+    font-family: "Open Sans", sans-serif;
     width: 100%; }
   #ourWork h2 {
     font-size: 18px;
-    font-family: Bahnschrift;
+    font-family: "Open Sans", sans-serif;
     color: white;
     line-height: 3.333;
     margin: 0 25px 0 0;
@@ -116,6 +112,7 @@ header {
   #ourWork p {
     color: white;
     font-size: 14px;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: .3px;
@@ -142,6 +139,7 @@ header {
   padding: 0; }
   #contact h1 {
     font-size: 24px;
+    font-family: "Open Sans", sans-serif;
     color: white;
     line-height: 1;
     text-align: center;
@@ -152,8 +150,7 @@ header {
   #contact label {
     display: block;
     font-size: 14px;
-    font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-    font-weight: 350;
+    font-family: "Open Sans", sans-serif;
     color: white;
     float: right;
     margin-right: 10px;
@@ -195,8 +192,7 @@ footer {
       footer ul li a {
         text-decoration: none;
         color: white;
-        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-        font-weight: 350; }
+        font-family: "Open Sans", sans-serif; }
 
 @media screen and (min-width: 768px) {
   #mainNav {
