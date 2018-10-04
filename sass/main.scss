@@ -1,0 +1,257 @@
+@import '_vars';
+// Fonts
+@font-face{
+    font-family: Bahnschrift;
+    src: url('../css/fonts/bahnschrift.ttf');
+}
+
+// Body Tags
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift;
+}
+// Main Navigation
+
+nav{
+    padding-bottom: 135px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.fas{
+    color: white;
+}
+
+.navLinks{
+    list-style-type: inline;
+    display: none;
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+    z-index: 3;
+    li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.active{
+    display: block;
+}
+// End Main Navigation
+
+// Header Section
+
+header{
+    background-image: url('../images/greenWorm.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+}
+
+// End Header Section
+
+// Our Team Section
+.ourTeam{
+    background-color: #8ce3b7;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+
+    Section{
+        width: 50%;
+        text-align: center;
+        color: white;
+    }
+
+    h1{
+        @include mainHeader;
+        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+        font-weight: 350;
+        padding: 35px 0 35px 0;
+        width: 100%;
+    }
+
+    h2, h3{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    p{
+        width: 100px;
+        margin: 0 auto;
+        padding: 40px 0 125px 0;
+    }
+
+}
+
+.teamFace{
+    height: 75px;
+    widows: 82px;
+    fill: white;
+}
+
+.socialIcons{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+}
+
+.instaIcon, .gitIcon{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+// End Our Team Section
+
+// Our Work Section
+
+#ourWork{
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    h1{
+        @include mainHeader;
+        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+        font-weight: 350;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 18px;
+        font-family: Bahnschrift;
+        color: white;
+        line-height: 3.333;
+        margin: 0 25px 0 0;
+        padding: 0;
+        align-self: flex-end;
+    }
+
+    p{
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2; 
+        letter-spacing: .3px;
+        padding-left: 11px;
+        padding-right: 3px;
+        align-self: center;
+    }
+}
+
+.workDisplay{
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
+    width: 90%;
+    height: 344px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+// End Our Work Section
+
+// Contact Sections
+#contact{
+    background-color: #8ce3b7;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    h1{
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        line-height: 1;
+        text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
+        text-align: center;
+        padding-top: 90px;
+    }
+
+    div{
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+
+    label{
+        display: block;
+        font-size: 14px;
+        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+        font-weight: 350;
+        color: white;
+        float: right;
+        margin-right: 10px;
+        margin-top: 7px;
+    }
+
+    input{
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.278);
+        opacity: 0.322;
+        box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
+        width: 230px;
+        height: 25px;   
+        border: none;
+        float: right;
+        margin-right: 55px;
+        padding: 2px;
+    }
+
+    textarea{
+        width: 230px;
+        height: 108px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.278);
+        opacity: 0.322;
+        box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);  
+        border: none;
+        float: right;
+        margin-right: 55px;
+        padding: 2px;
+    }
+}
+
+
+// End Contact Section
+
+@media screen and (min-width: 768px) {
+    #mainNav {
+        display: block;
+
+        ul{
+            display: flex;
+            justify-content: flex-end;
+
+            li{
+                list-style: none;
+                margin: 0;
+
+                a{
+                    margin-left: 40px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+}
