@@ -181,7 +181,7 @@ header{
     }
 
     div{
-        align-self: flex-end;
+        align-self: center;
         margin-bottom: 20px;
     }
 
@@ -197,16 +197,15 @@ header{
 
     input{
         @include inputArea;
-        width: 230px;
+        width: 200px;
         height: 25px;   
-        margin-right: 55px;
     }
 
     textarea{
         @include inputArea;
-        width: 230px;
+        width: 200px;
         height: 108px;
-        margin-right: 55px;
+        margin-right: 15px;
     }
 }
 
