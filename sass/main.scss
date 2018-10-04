@@ -44,6 +44,8 @@ nav{
             text-decoration: none;
             color: white;
             border-bottom: 1px solid white;
+            font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+            font-weight: 350;
         }
     }
 }
@@ -56,9 +58,7 @@ nav{
 // Header Section
 
 header{
-    background-image: url('../images/greenWorm.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include wormBackGround;
     background-color: #cccccc;
 }
 
@@ -171,6 +171,7 @@ header{
 // Contact Sections
 #contact{
     background-color: #8ce3b7;
+    @include wormBackGround;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -180,7 +181,6 @@ header{
         font-size: 24px;
         color: rgb(255, 255, 255);
         line-height: 1;
-        text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
         text-align: center;
         padding-top: 90px;
     }
@@ -202,34 +202,46 @@ header{
     }
 
     input{
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.278);
-        opacity: 0.322;
-        box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
+        @include inputArea;
         width: 230px;
         height: 25px;   
-        border: none;
-        float: right;
         margin-right: 55px;
-        padding: 2px;
     }
 
     textarea{
+        @include inputArea;
         width: 230px;
         height: 108px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.278);
-        opacity: 0.322;
-        box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);  
-        border: none;
-        float: right;
         margin-right: 55px;
-        padding: 2px;
+    }
+}
+
+// End Contact Section
+
+// Footer Section
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #8ce3b7;
+    ul{
+        align-self: flex-end;
+        li{
+            display: inline;
+            list-style-type: none;
+            margin-right: 10px;
+            padding-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+                font-weight: 350;
+            }
+        }
     }
 }
 
 
-// End Contact Section
+// End Footer Section
 
 @media screen and (min-width: 768px) {
     #mainNav {

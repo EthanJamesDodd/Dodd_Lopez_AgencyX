@@ -33,13 +33,15 @@ nav {
     .navLinks li a {
       text-decoration: none;
       color: white;
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid white;
+      font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+      font-weight: 350; }
 
 .active {
   display: block; }
 
 header {
-  background-image: url("../images/greenWorm.gif");
+  background-image: url(../images/greenWorm.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #cccccc; }
@@ -131,6 +133,9 @@ header {
 
 #contact {
   background-color: #8ce3b7;
+  background-image: url(../images/greenWorm.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -139,7 +144,6 @@ header {
     font-size: 24px;
     color: white;
     line-height: 1;
-    text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
     text-align: center;
     padding-top: 90px; }
   #contact div {
@@ -159,23 +163,40 @@ header {
     background-color: rgba(255, 255, 255, 0.278);
     opacity: 0.322;
     box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
-    width: 230px;
-    height: 25px;
     border: none;
     float: right;
-    margin-right: 55px;
-    padding: 2px; }
-  #contact textarea {
+    padding: 2px;
     width: 230px;
-    height: 108px;
+    height: 25px;
+    margin-right: 55px; }
+  #contact textarea {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.278);
     opacity: 0.322;
     box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
     border: none;
     float: right;
-    margin-right: 55px;
-    padding: 2px; }
+    padding: 2px;
+    width: 230px;
+    height: 108px;
+    margin-right: 55px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #8ce3b7; }
+  footer ul {
+    align-self: flex-end; }
+    footer ul li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 10px;
+      padding-bottom: 5px; }
+      footer ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+        font-weight: 350; }
 
 @media screen and (min-width: 768px) {
   #mainNav {
