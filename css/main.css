@@ -158,7 +158,8 @@ header {
     padding-left: 11px;
     padding-right: 3px;
     padding-bottom: 25px;
-    align-self: center; }
+    align-self: center;
+    margin: 0; }
   #ourWork img {
     background-color: #cccccc;
     box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
@@ -265,5 +266,27 @@ footer {
 
   .navbar-toggle {
     display: none; } }
+@media screen and (min-width: 1023px) {
+  nav {
+    height: 67px;
+    background-color: #8ce3b7;
+    padding: 0; }
+
+  .navLinks {
+    display: block;
+    position: unset;
+    background-color: transparent;
+    margin-right: 15px; }
+    .navLinks li a {
+      text-shadow: none;
+      line-height: 33px; }
+
+  header h1 {
+    font-size: 59.517px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    color: white;
+    line-height: 1.008;
+    text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44); } }
 
 /*# sourceMappingURL=main.css.map */
