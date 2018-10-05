@@ -5,6 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.hidden{
+    display: none;
+}
 // Main Navigation
 
 nav{
@@ -14,7 +18,7 @@ nav{
 .navbar-toggle {
     position: fixed;
     top: 10px;
-    right: 20px;
+    right: 10px;
     cursor: pointer; 
     color: rgba(255,255,255,0.8);
     font-size: 24px;
@@ -145,7 +149,7 @@ header{
 
 .teamFace{
     height: 75px;
-    widows: 82px;
+    width: auto;
     fill: white;
 }
 
@@ -172,6 +176,7 @@ header{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     h1{
         @include mainHeader;
         font-family: $main-font;
@@ -399,13 +404,13 @@ footer{
     }
 
     p{
-        font-size: 21px;
+        font-size: 18px;
         position: absolute;
         left: 70%;
         top: 0%;
         margin: 0 auto;
-        padding: 0;
-        width: 150px;
+        padding: 50px 0 0 0;
+        width: 175px;
     }
 
 }

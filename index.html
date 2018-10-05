@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body>
     <header>
             <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
                     <span class="navbar-toggle" id="js-navbar-toggle">
                         <i class="fas fa-bars"></i>
                     </span>
@@ -41,7 +44,7 @@
                     <a><img src="images/gitIcon.svg"></a>
                 </div>
             </div>
-            <p>I am proficient at HTML/CSS, have experiece in both CSS Grid and Flexbox, and am in the process of learning JavaScript!</p>
+            <p class="teamDesc">I am proficient at HTML/CSS, have experiece in both CSS Grid and Flexbox, and am in the process of learning JavaScript!</p>
        </section>
 
        <section id="christineSection">
@@ -56,25 +59,25 @@
                         <a><img src="images/gitIcon.svg"></a>
                     </div>
                 </div>
-            <p>I am proficient at Photoshop, Illustrator, and After Effects, and I have a background in Fine Arts</p>
+            <p class="teamDesc">I am proficient at Photoshop, Illustrator, and After Effects, and I have a background in Fine Arts</p>
        </section>
     </article>
 
     <article id="ourWork">
         <h1 class="mainHeader" id="workDisplay1">OUR WORK</h1>
-        <div class=workDisplay id="workDisplay2">
+        <div class=workDisplay id="workDisplay2" data-aos="fade-right">
             <img src="images/pureVolumeMockup.jpg">
         </div>
-        <div class=workDisplay id="workDisplay3">
+        <div class=workDisplay id="workDisplay3" data-aos="fade-left">
                 <img src="images/pureVolumeLogo.jpg">
                 <button><i class="fas fa-play"></i></button>
         </div>
             <h2 class="workDisplayTitle" id="workDisplay4" >PURE VOLUME</h2>
              <p id="workDisplay5">Pure Volume is a Brand Redesign and Visual Overhaul for the Music, Culture and Enternainment site by Hive Media. This is a Vanilla Javascript and CSS Site utilizing CSS grid.  </p>
-        <div class=workDisplay id="workDisplay6">
+        <div class=workDisplay id="workDisplay6" data-aos="fade-right">
             <img  src="images/starshipMockup.jpg">
         </div>
-        <div class=workDisplay id="workDisplay7">
+        <div class=workDisplay id="workDisplay7" data-aos="fade-left">
             <img src="images/starshipTroopersVideo.jpg" >
         </div>
             <h2 class="workDisplayTitle" id="workDisplay8">STARSHIP TROOPERS GAME</h2>
@@ -110,9 +113,10 @@
 
 
 </body>
-<script src="https://unpkg.com/scrollreveal"></script>
-
+<script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
+<script src="node_modules/aos/dist/aos.js"></script>
 <script src="js/main.js"></script>
+
 
 
 </html>
