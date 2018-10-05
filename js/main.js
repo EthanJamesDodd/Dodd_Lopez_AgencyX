@@ -1,9 +1,15 @@
+// import AOS from 'aos';
+// AOS.init();
+
+
 let mainNav = document.querySelector('#js-menu'),
     navBarToggle = document.querySelector('#js-navbar-toggle'),
     nameBox = document.querySelector('#nameBox'),
     emailBox = document.querySelector('#emailBox'),
     messageBox = document.querySelector('#messageBox');
 
+
+ScrollReveal().reveal('.mainHeader');
 
 function hamMenu(){
     console.log('stuff');

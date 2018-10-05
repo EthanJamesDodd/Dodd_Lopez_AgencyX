@@ -19,6 +19,7 @@ nav {
 
 .navLinks {
   list-style-type: inline;
+  position: absolute;
   display: none;
   margin: 0;
   padding-top: 25px;
@@ -30,7 +31,6 @@ nav {
     .navLinks li a {
       text-decoration: none;
       color: white;
-      border-bottom: 1px solid white;
       font-family: "Open Sans", sans-serif; }
 
 .active {
@@ -40,7 +40,40 @@ header {
   background-image: url(../images/greenWorm.gif);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column; }
+  header h1 {
+    font-size: 34px;
+    color: white;
+    line-height: 1.765;
+    text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44); }
+  header p {
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    line-height: 1.429;
+    text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
+    width: 250px;
+    align-self: center; }
+  header button {
+    align-self: center;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #cccccc;
+    box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
+    width: 132px;
+    height: 41px;
+    z-index: 42;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    font-family: "Lato", sans-serif;
+    color: white; }
 
 .ourTeam {
   background-color: #8ce3b7;
