@@ -95,6 +95,8 @@ header{
             margin-top: 20px;
             margin-bottom: 300px;
             font-family: $secondary-font;
+            font-size: 12px;
+            font-weight: bold;
             color: white;
           }
           
@@ -226,7 +228,9 @@ header{
             width: 48px;
             height: 49px;
             top: 45%;
-            left: 40%;
+            right: 46%;
+            margin: 0;
+            padding: 0;
         }
     }
 // End Our Work Section
@@ -373,51 +377,41 @@ footer{
 
     // Our Team Section
 .ourTeam{
+    justify-content: center;
+    padding-bottom: 125px;
     Section{
-        width: 50%;
+        width: 30%;
         text-align: center;
         color: white;
+        position: relative;
     }
 
     h1{
-        width: 100%;
         text-align: right;
-        padding: 35px 50px 0 0 ;
+        padding: 15px 50px 50px; 
         margin: 0;
     }
 
     h2, h3{
-        font-family: $main-font;
-        font-weight: 400;
-        font-size: 16px;
+        font-size: 22px;
     }
 
     p{
-        width: 100px;
+        font-size: 21px;
+        position: absolute;
+        left: 70%;
+        top: 0%;
         margin: 0 auto;
-        padding: 40px 0 125px 0;
-        font-family: $secondary-font;
+        padding: 0;
+        width: 150px;
     }
 
 }
 
 .teamFace{
-    height: 75px;
-    widows: 82px;
-    fill: white;
-}
-
-.socialIcons{
-    display: block;
-    margin: 0 auto;
-    width: 80px;
-    height: 40px;
-}
-
-.instaIcon, .gitIcon{
-    width: 40px;
-    height: 40px;
-    float: left;
+    width: 126px;
+    height: 115px;
+      
 }
 
 // End Our Team Section
@@ -425,70 +419,44 @@ footer{
 // Our Work Section
 
 #ourWork{
-    background-color: $primary-grey;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    -webkit-flex-flow: row wrap;
+    
     h1{
-        @include mainHeader;
-        font-family: $main-font;
-        width: 100%;
-    }
-
-    h2{
-        font-size: 18px;
-        font-family: $main-font;
-        color: white;
-        line-height: 3.333;
-        margin: 0 25px 0 0;
-        padding: 0;
-        align-self: flex-end;
-    }
-
-    p{
-        color: white;
-        font-size: 14px;
-        font-family: $secondary-font;
-        font-weight: 400;
-        line-height: 1.2; 
-        letter-spacing: .3px;
-        padding-left: 11px;
-        padding-right: 3px;
-        padding-bottom: 25px;
-        align-self: center;
+        text-align: right;
+        padding: 15px 50px 50px; 
         margin: 0;
     }
 
-    img{
-        background-color: rgb(204, 204, 204);
-        box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
-        width: 100%;
-        height: auto;
-        margin-bottom: 30px;
+    h2{
+        justify-self: left;
+        width: 45%;
+        box-sizing: border-box;
+        padding: 0 0 100px 25%;
+        margin: 0;
+        line-height: unset;
+        align-self: unset;
+        text-align: right;
     }
+
+    p{
+        font-size: 18px;
+        justify-self: right;
+        width: 45%;
+        margin: 0 auto;
+        padding: 0 0 100px 4%;
+        box-sizing: border-box;
+    }
+
+}
+
+.workDisplay{
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 
-    .workDisplay{
-        width: 90%;
-        height: auto;
-        align-self: center;
-        position: relative;
-            
-        button{
-            position: absolute;
-            border-width: 3px;
-            border-color: rgb(251, 251, 251);
-            border-style: solid;
-            border-radius: 50%;
-            background-color: rgb(204, 204, 204);
-            box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
-            width: 48px;
-            height: 49px;
-            top: 45%;
-            left: 40%;
-        }
-    }
+
+
 // End Our Work Section
 }

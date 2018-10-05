@@ -11,8 +11,8 @@
 
 @mixin wormBackGround{
     background-image: url(../images/greenWorm.gif);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 @mixin inputArea{
