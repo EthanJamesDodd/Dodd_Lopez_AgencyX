@@ -1,8 +1,5 @@
-// import ScrollReveal() from 'scrollreveal';
-
-// export default new ScrollReveal();
-import AOS from 'aos';
-AOS.init();
+// import AOS from 'aos';
+// AOS.init();
 
 
 let mainNav = document.querySelector('#js-menu'),

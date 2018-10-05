@@ -26,6 +26,7 @@ nav{
 
 .navLinks{
     list-style-type: inline;
+    position: absolute;
     display: none;
     margin: 0;
     padding-top: 25px;
@@ -37,9 +38,10 @@ nav{
         a{
             text-decoration: none;
             color: white;
-            border-bottom: 1px solid white;
+            // border-bottom: 1px solid white;
             font-family: $main-font;
         }
+
     }
 }
 
@@ -53,7 +55,44 @@ nav{
 header{
     @include wormBackGround;
     background-color: $primary-grey;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        @include mainHeader;
+        font-family: $main-font;
+        text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
+    }
+
+    p{         
+        font-size: 14px;
+        font-family: $secondary-font;
+        color: rgb(255, 255, 255);
+        line-height: 1.429;
+        text-shadow: 0px 6px 6.65px rgba(28, 30, 29, 0.44);
+        width: 250px;
+        align-self: center;
+    }
+
+    button{
+            align-self: center;
+            border-width: 2px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 10px;
+            background-color: rgb(204, 204, 204);
+            box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
+            width: 132px;
+            height: 41px;
+            z-index: 42;
+            margin-top: 20px;
+            margin-bottom: 300px;
+            font-family: $secondary-font;
+            color: white;
+          }
 }
+
+
 
 // End Header Section
 
