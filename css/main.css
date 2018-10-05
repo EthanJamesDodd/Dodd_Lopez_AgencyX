@@ -40,7 +40,11 @@ nav {
       font-family: "Lato", sans-serif;
       font-weight: 600;
       text-shadow: 1px 1px 2px #969696;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      transition: all .3s ease; }
+    .navLinks li a:hover {
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid #8ce3b7; }
 
 .active {
   top: 0;
@@ -281,6 +285,9 @@ footer {
         text-shadow: none;
         line-height: 33px;
         margin-left: 30px; }
+      .navLinks li a:hover {
+        padding-bottom: 2px;
+        border-bottom: 2.5px solid white; }
 
   .navbar-toggle {
     display: none; } }
