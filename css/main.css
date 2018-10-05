@@ -7,33 +7,40 @@ nav {
   padding-bottom: 135px; }
 
 .navbar-toggle {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px; }
+  font-size: 24px;
+  z-index: 3; }
 
 .fas {
   color: white; }
 
 .navLinks {
-  list-style-type: inline;
-  position: absolute;
-  display: none;
+  position: fixed;
+  display: hidden;
   margin: 0;
-  padding-top: 25px;
-  padding-left: 25px;
-  z-index: 3; }
+  padding: 15px 15px 5px 15px;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.722);
+  transition: all .5s ease-in-out;
+  top: -115px;
+  border-radius: 0 0 5px 0; }
   .navLinks li {
     list-style-type: none;
     margin-bottom: 10px; }
     .navLinks li a {
       text-decoration: none;
       color: white;
-      font-family: "Open Sans", sans-serif; }
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px #969696;
+      letter-spacing: 2px; }
 
 .active {
+  top: 0;
   display: block; }
 
 header {
@@ -69,7 +76,6 @@ header {
     box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
     width: 132px;
     height: 41px;
-    z-index: 42;
     margin-top: 20px;
     margin-bottom: 300px;
     font-family: "Lato", sans-serif;
@@ -151,15 +157,32 @@ header {
     letter-spacing: .3px;
     padding-left: 11px;
     padding-right: 3px;
+    padding-bottom: 25px;
     align-self: center; }
+  #ourWork img {
+    background-color: #cccccc;
+    box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; }
 
 .workDisplay {
-  background-color: #cccccc;
-  box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
   width: 90%;
-  height: 344px;
-  margin-bottom: 30px;
-  align-self: center; }
+  height: auto;
+  align-self: center;
+  position: relative; }
+  .workDisplay button {
+    position: absolute;
+    border-width: 3px;
+    border-color: #fbfbfb;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #cccccc;
+    box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
+    width: 48px;
+    height: 49px;
+    top: 45%;
+    left: 40%; }
 
 #contact {
   background-color: #8ce3b7;
@@ -171,12 +194,13 @@ header {
   margin: 0;
   padding: 0; }
   #contact h1 {
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: white;
-    line-height: 1;
-    text-align: center;
-    padding-top: 90px; }
+    line-height: 3.333;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    align-self: center; }
   #contact div {
     align-self: center;
     margin-bottom: 20px; }
