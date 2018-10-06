@@ -92,29 +92,30 @@ header{
         align-self: center;
         text-align: center;
     }
-
+    a{
+        align-self: center;
+    }
     button{
-            align-self: center;
-            border-width: 2px;
-            border-color: rgb(255, 255, 255);
-            border-style: solid;
-            border-radius: 10px;
-            background-color: rgb(204, 204, 204);
-            box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
-            width: 132px;
-            height: 41px;
-            margin-top: 20px;
-            margin-bottom: 300px;
-            font-family: $secondary-font;
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-            transition: .5s all ease;
-          }
-          button:hover{
-            background:#39a16c;
-        }
-          
+        align-self: center;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 10px;
+        background-color: rgb(204, 204, 204);
+        box-shadow: 0px 6px 6.65px 0.35px rgba(28, 30, 29, 0.44);
+        width: 132px;
+        height: 41px;
+        margin-top: 20px;
+        margin-bottom: 300px;
+        font-family: $secondary-font;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        transition: .5s all ease;
+      }
+      button:hover{
+        background:#39a16c;
+    }   
 }
 
 
@@ -179,7 +180,7 @@ header{
 .icon 
 {
     fill:white;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .icon:hover
 {
@@ -254,10 +255,15 @@ header{
             box-shadow: 0px 8px 8.3px 1.7px rgba(28, 30, 29, 0.45);
             width: 48px;
             height: 49px;
-            top: 45%;
-            right: 46%;
+            top: 50%;
+            right: 43%;
             margin: 0;
             padding: 0;
+            transition: all .1s ease;
+        }
+
+        button:hover{
+            background-color: $primary-green;
         }
     }
 // End Our Work Section
@@ -494,6 +500,15 @@ footer{
     width: 45%;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    button{
+        width: 100px;
+        height: 100px;
+
+        .fas{
+            font-size: 28px;
+        }
+    }
 }
 
 
@@ -501,3 +516,45 @@ footer{
 
 // End Our Work Section
 }
+
+
+// Video Page
+
+.lightBox{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    height: auto;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+    animation: lightBox 2s;
+}
+
+@keyframes lightBox {
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+
+video{
+    width: 80%;
+    display: block;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.showLightBox{
+    display: block;
+}
+
+.closeButton{
+    font-size: 30px;
+    position: fixed;
+    right: 13%;
+    top: 8%;
+    z-index: 6;
+}
+
+// End Video Page

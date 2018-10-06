@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Agency X</title>
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="node_modules/photoswipe/dist/default-skin/default-skin.css">
     <link rel="stylesheet" href="css/main.css">
     
 </head>
@@ -19,24 +21,25 @@
                         <i class="fas fa-bars"></i>
                     </span>
                         <ul class="navLinks" id="js-menu">
-                            <li><a href="#">OUR TEAM</a></li>
-                            <li><a href="#">OUR WORK</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#teamSection">OUR TEAM</a></li>
+                            <li><a href="#ourWork">OUR WORK</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
                         </ul>
                     </nav>
         <h1 class="mainHeader">AGENCY X</h1>
         <p>We are Agency X and we like to make things. This is our work</p>
 
-        <button>CONTACT US</button>
+        <a href="#contact"><button>CONTACT US</button></a>
     </header>
 
-    <article class="ourTeam">
+    <article class="ourTeam" id="teamSection">
         <h1 class="mainHeader">OUR TEAM</h1>
         <section id="ethanSection" >
             <img src="images/ethan.svg" class="teamFace" alt="Ethan Dodd">
             <h2 class="teamName">ETHAN</h2>
             <h3 class="teamPosition">Developer<br>Project Manager</h2>
             <div class="socialIcons">
+            
                 <div class="instaIcon">
                     <a><svg version="1.1" id="git" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 40 38" style="enable-background:new 0 0 40 38;" xml:space="preserve">
@@ -44,23 +47,29 @@
                        .st0{fill:#FFFFFF;}
                    </style>
                    <g>
+                       <a href="https://www.instagram.com/baseddodd/">
                        <path class="icon" d="M28.7,6.9h-16c-2.8,0-5,2.3-5,5v5.3v10.7c0,2.8,2.3,5,5,5h16c2.8,0,5-2.3,5-5V17.2v-5.3
                            C33.7,9.1,31.4,6.9,28.7,6.9z M30.1,9.9h0.6v0.6v3.8h-4.4V9.9H30.1z M17,17.2c0.8-1.2,2.2-1.9,3.7-1.9s2.9,0.8,3.7,1.9
                            c0.5,0.8,0.9,1.7,0.9,2.7c0,2.5-2.1,4.6-4.6,4.6s-4.6-2.1-4.6-4.6C16.1,18.9,16.4,18,17,17.2z M31.2,27.9c0,1.4-1.1,2.5-2.5,2.5
                            h-16c-1.4,0-2.5-1.1-2.5-2.5V17.2h3.9c-0.3,0.8-0.5,1.7-0.5,2.7c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1c0-0.9-0.2-1.8-0.5-2.7h3.9
                            V27.9z"/>
+                           </a>
+                           </g>
                    </g>
                    </svg>
                    
 </a>
                 </div>
+            
                 <div class="gitIcon">
+                    
                     <div class="gitIcon">
                             <a> <svg version="1.1" id="git" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 40 38" style="enable-background:new 0 0 40 38;" xml:space="preserve">
     <style type="text/css">
         .st0{fill:#FFFFFF;}
     </style>
+    <a href="https://github.com/EthanJamesDodd">
     <path id="path9-5_10_" class="icon" d="M10.1,18.7l0.5,1.2c1.2,2.2,3.6,3.6,7.6,4c-0.6,0.4-1.2,1.2-1.3,2.2c-0.7,0.5-2.1,0.6-3.3,0.3
         c-1.6-0.5-2.2-3.6-4.5-3.1c-0.5,0.1-0.4,0.4,0,0.7c0.7,0.5,1.4,1,1.9,2.3c0.4,0.9,1.2,2.6,3.9,2.6c1,0,1.8-0.1,1.8-0.1s0,2.4,0,3.3
         c0,1.1-1.5,1.4-1.5,1.9c0,0.2,0.5,0.2,0.9,0.2c0.8,0,2.4-0.6,2.4-1.8c0-0.9,0-3.9,0-4.4c0-1.1,0.6-1.5,0.6-1.5s0.1,6.1-0.1,6.9
@@ -70,10 +79,13 @@
         c0-3.7-1.8-5-2.1-5.6c0.5-2.8-0.1-4.1-0.4-4.5c-1-0.4-3.5,0.9-4.9,1.8c-2.2-0.6-6.9-0.6-8.7,0.2c-3.3-2.3-5-2-5-2s-1.1,2-0.3,4.9
         c-1.1,1.4-1.9,2.3-1.9,4.9C9.5,16.2,9.7,17.5,10.1,18.7L10.1,18.7z"/>
     </svg>
+</a>
+</a>
     </a>
             </div>
         </div>
-            </div>
+            
+            
             <p class="teamDesc">I am proficient at HTML/CSS, have experiece in both CSS Grid and Flexbox, and am in the process of learning JavaScript!</p>
        </section>
 
@@ -89,11 +101,13 @@
                            .st0{fill:#FFFFFF;}
                        </style>
                        <g>
+                           <a href="https://www.instagram.com/krysialopez/">
                            <path class="icon" d="M28.7,6.9h-16c-2.8,0-5,2.3-5,5v5.3v10.7c0,2.8,2.3,5,5,5h16c2.8,0,5-2.3,5-5V17.2v-5.3
                                C33.7,9.1,31.4,6.9,28.7,6.9z M30.1,9.9h0.6v0.6v3.8h-4.4V9.9H30.1z M17,17.2c0.8-1.2,2.2-1.9,3.7-1.9s2.9,0.8,3.7,1.9
                                c0.5,0.8,0.9,1.7,0.9,2.7c0,2.5-2.1,4.6-4.6,4.6s-4.6-2.1-4.6-4.6C16.1,18.9,16.4,18,17,17.2z M31.2,27.9c0,1.4-1.1,2.5-2.5,2.5
                                h-16c-1.4,0-2.5-1.1-2.5-2.5V17.2h3.9c-0.3,0.8-0.5,1.7-0.5,2.7c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1c0-0.9-0.2-1.8-0.5-2.7h3.9
                                V27.9z"/>
+                            </a>
                        </g>
                        </svg>
                        
@@ -106,6 +120,7 @@
         <style type="text/css">
             .st0{fill:#FFFFFF;}
         </style>
+        <a href="https://github.com/christine193">
         <path id="path9-5_10_" class="icon" d="M10.1,18.7l0.5,1.2c1.2,2.2,3.6,3.6,7.6,4c-0.6,0.4-1.2,1.2-1.3,2.2c-0.7,0.5-2.1,0.6-3.3,0.3
             c-1.6-0.5-2.2-3.6-4.5-3.1c-0.5,0.1-0.4,0.4,0,0.7c0.7,0.5,1.4,1,1.9,2.3c0.4,0.9,1.2,2.6,3.9,2.6c1,0,1.8-0.1,1.8-0.1s0,2.4,0,3.3
             c0,1.1-1.5,1.4-1.5,1.9c0,0.2,0.5,0.2,0.9,0.2c0.8,0,2.4-0.6,2.4-1.8c0-0.9,0-3.9,0-4.4c0-1.1,0.6-1.5,0.6-1.5s0.1,6.1-0.1,6.9
@@ -115,6 +130,7 @@
             c0-3.7-1.8-5-2.1-5.6c0.5-2.8-0.1-4.1-0.4-4.5c-1-0.4-3.5,0.9-4.9,1.8c-2.2-0.6-6.9-0.6-8.7,0.2c-3.3-2.3-5-2-5-2s-1.1,2-0.3,4.9
             c-1.1,1.4-1.9,2.3-1.9,4.9C9.5,16.2,9.7,17.5,10.1,18.7L10.1,18.7z"/>
         </svg>
+        </a>
         </a>
                 </div>
             </div>
@@ -130,7 +146,7 @@
         </div>
         <div class=workDisplay id="workDisplay3" data-aos="fade-left">
                 <img src="images/pureVolumeLogo.jpg">
-                <button><i class="fas fa-play"></i></button>
+                <button id="vidBut"><i class="fas fa-play"></i></button>
         </div>
             <h2 class="workDisplayTitle" id="workDisplay4" >PURE VOLUME</h2>
              <p id="workDisplay5">Pure Volume is a Brand Redesign and Visual Overhaul for the Music, Culture and Enternainment site by Hive Media. This is a Vanilla Javascript and CSS Site utilizing CSS grid.  </p>
@@ -143,6 +159,14 @@
             <h2 class="workDisplayTitle" id="workDisplay8">STARSHIP TROOPERS GAME</h2>
             <p id="workDisplay9">A small Bug Squashing Adventure App created to celebrate the 20th anniversary for the Sci-Fi Thriller StarShip Troopers. This App was created using Javascript and CSS Canvas </p>
     </article>
+
+    <div class="lightBox">
+        <span class="closeLightbox"><i class="fas fa-times closeButton"></i></span>
+
+        <video controls>
+            <source src="video/pureVolumeDesktop.mp4">
+        </video>
+    </div>
 
     <section id="contact">
         <h1 class="mainHeader">GET IN TOUCH WITH US</h1>
@@ -172,8 +196,79 @@
     
 
 
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 </body>
-<script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
+<script src="node_modules/photoswipe/dist/photoswipe.min.js"></script>
+<script src="node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+<script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="node_modules/aos/dist/aos.js"></script>
 <script src="js/main.js"></script>
 
