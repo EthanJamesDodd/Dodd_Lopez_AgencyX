@@ -20,7 +20,11 @@
     "aos": "^2.3.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
+    "mini-lightbox": "^3.0.6",
     "photoswipe": "^4.1.2",
     "scrollreveal": "^4.0.4"
   },
+  "dependencies": {
+    "require.js": "^1.0.0"
+  }
 }
