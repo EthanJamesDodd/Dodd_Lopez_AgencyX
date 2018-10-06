@@ -26,8 +26,8 @@ npm install --production
 ```
 
 ```
-If required
-npm fix audit
+If you get "found 5 vulnerabilities (1 low, 4 high)"
+npm audit fix
 ```
 
 ## Authors
